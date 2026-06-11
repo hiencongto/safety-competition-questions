@@ -21,13 +21,13 @@ class HMTController extends Controller
 
     public function home()
     {
-        $dataPool = $this->anserDatabaseService->getUnanswered();
-
-        return view("background", compact('dataPool'));
+        return view("background");
     }
 
     public function quesAndAns()
     {
-        return view("quesandans");
+        $dataPool = $this->anserDatabaseService->getUnanswered();
+
+        return view("quesandans", compact('dataPool'));
     }
 }

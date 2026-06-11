@@ -64,10 +64,11 @@
 <body>
     <div class="page">
     </div>
-
-    <button class="btn-next">Tiếp theo</button>
+    <button class="btn-next" onclick="goToQuesAndAns()">Tiếp theo</button>
 </body>
 <script>
-  
+  function goToQuesAndAns() {
+    window.location.href = '{{ route("hmt.quesandans") }}';
+  }
 </script>
 </html>
