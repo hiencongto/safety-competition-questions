@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\HMTController;
 
-Route::get('/', function () {
-    // return view('welcome');
+Route::prefix('HMT')->group(function () {
+    Route::get('/home', [HMTController::class, 'home']);
+    Route::get('/quesandans', [HMTController::class, 'quesAndAns']);
+
 });

@@ -1,0 +1,832 @@
+[
+    {
+        "serial_no": "1",
+        "question": "Công việc của chúng ta là",
+        "answer": "cứu sinh mạng của con người"
+    },
+    {
+        "serial_no": "2",
+        "question": "Khách hàng của chúng ta",
+        "answer": "Bạn bè, người thân, người nhà, bản thân"
+    },
+    {
+        "serial_no": "3",
+        "question": "Phương châm chất lượng của công ty là",
+        "answer": "Đồng tâm hiệp lực, hài lòng khách hàng, khai phát sáng tạo, không ngừng cải thiện"
+    },
+    {
+        "serial_no": "4",
+        "question": "Thao tác “3 không”:",
+        "answer": "Không tiếp nhận sản phẩm không đạt ,Không sản xuất sản phẩm không đạt ,Không để hàng lỗi lọt sang công đoạn sau"
+    },
+    {
+        "serial_no": "5",
+        "question": "Triết lý dinh doanh của HMT",
+        "answer": "nhiệt tình,trí tuệ,sáng tạo,siêng năng"
+    },
+    {
+        "serial_no": "6",
+        "question": "Nguyên tắc hành vi 3 không",
+        "answer": "Không cố ý phá hoại sản phẩm, không giấu diếm bất thường, không bao biện bất thường"
+    },
+    {
+        "serial_no": "7",
+        "question": "Tại sao sản phẩm của chúng ta không thể sửa hàng",
+        "answer": "Tại vì vị tri bị sửa hàng đã bị kim đâm qua 2 lần, cường độ bị yếu đi, khi túi khí phát nổ thì vị trí này sẽ làm tính năng của túi khí mất tác dụng"
+    },
+    {
+        "serial_no": "8",
+        "question": "Như thế nào là sửa hàng",
+        "answer": "Hàng phát sinh NG, tự ý có thêm các hành vi khác để xử lý túi khí đều gọi là sửa hàng"
+    },
+    {
+        "serial_no": "9",
+        "question": "Sau khi phát sinh sản phẩm NG chúng ta cần làm gì",
+        "answer": "Lập tức giao cho chuyền trưởng hoặc QC xác nhận và cách ly"
+    },
+    {
+        "serial_no": "10",
+        "question": "Như thế nào gọi là dị vật",
+        "answer": "Mọi thứ không thuộc về túi khí thì được gọi là dị vật"
+    },
+    {
+        "serial_no": "11",
+        "question": "Công nhân viên trong chuyền sản xuất ( bao gồm: sửa máy, kỹ sư, nhân viên kho) khi vào chuyền sản xuất yêu cầu về trang phục như thế nào?",
+        "answer": "Thống nhất mặc đồng phục của công ty không có dị vật trên quần áo, quần và thắt lưng không được có đồ dễ rơi."
+    },
+    {
+        "serial_no": "12",
+        "question": "Yêu cầu về trang phục đối với nhân viên bên ngoài khi vào chuyền sản xuất",
+        "answer": "Trang phục áo không được có khóa, không được có cúc, khuy, cúc của quần và thắt lưng không dễ bị rơi"
+    },
+    {
+        "serial_no": "13",
+        "question": "Yêu cầu về đồ trang sức không được đeo khi vào trong chuyền sản xuất và cần nói ra ít nhất 3 loại",
+        "answer": "Vào chuyền sản xuất không được phép đeo đồ trang sức ( nhẫn, đồng hồ, hoa tai, vòng tay, tiền xu, dây chuyền, chìa khóa..."
+    },
+    {
+        "serial_no": "14",
+        "question": "Yêu cầu về hộp miếng cắt",
+        "answer": "Không bị vỡ, không bị sứt mẻ, sắc nhọn, không có dị vật"
+    },
+    {
+        "serial_no": "15",
+        "question": "Nêu yêu cầu về giá liệu",
+        "answer": "Ôcs sử dụng phải được bảo hộ ( dán băng dính bao phủ), không bị lỏng, không bị rơi."
+    },
+    {
+        "serial_no": "16",
+        "question": "Nêu yêu cầu về dùng bút trong chuyền sản xuất",
+        "answer": "Trên bút phải có mã số, không được tự ý mang bút của mình vào chuyền, khi sử dụng bút phải được buộc dây cố định"
+    },
+    {
+        "serial_no": "17",
+        "question": "Nêu yêu cầu về con dấu",
+        "answer": "Không bị vỡ hỏng, không bị mất, không bị dò mực, phải có tem dán hiển thị."
+    },
+    {
+        "serial_no": "18",
+        "question": "quản lý yêu cầu của kéo",
+        "answer": "Cần phải có mã số theo chuyền sản xuất, không được tự ý mang đi, khi sử dụng cần dùng dây buộc cố định"
+    },
+    {
+        "serial_no": "19",
+        "question": "Trước khi sử dụng kéo cần xác nhận những gì",
+        "answer": "Đầu kéo không sắc nhọn, ốc không bị lỏng, kéo không bị han"
+    },
+    {
+        "serial_no": "20",
+        "question": "Yêu cầu khi sử dụng thước",
+        "answer": "Chỉ có thể được sử dụng thước có mã số theo SWI quy định, khi sử dụng cần buộc dây cố định"
+    },
+    {
+        "serial_no": "21",
+        "question": "Yêu cầu trước khi sử dụng thước cần xác nhận những gì",
+        "answer": "Xác nhận không hết hạn sử dụng, vạch kẻ của thước còn rõ nét, không bị biến dạng, góc thước không sắc nhọn"
+    },
+    {
+        "serial_no": "22",
+        "question": "Yêu cầu về Chìa khóa phòng sai",
+        "answer": "Cần dùng dây buộc cố định"
+    },
+    {
+        "serial_no": "23",
+        "question": "Yêu cầu về đánh dấu ốc của thiết bị, công cụ",
+        "answer": "Ốc trên mặt bàn trở lên cần đánh dấu chữ i hoặc dùng băng dính dán"
+    },
+    {
+        "serial_no": "24",
+        "question": "Các lỗ không có ốc yêu cầu đánh dấu như thế nào",
+        "answer": "Dùng bút đen đánh dấu"
+    },
+    {
+        "serial_no": "25",
+        "question": "Yêu cầu của công cụ đóng gói",
+        "answer": "Đầu răng cưa không sắc nhọn, cần dùng băng dính dán bao phủ ốc, không bị han rỉ. 2 răng ngoài cùng cần mài và cắt bỏ"
+    },
+    {
+        "serial_no": "26",
+        "question": "Yêu cầu quản lý kim",
+        "answer": "Kim sẽ do sửa máy quản lý, mỗi khi bắt đầu và kết thúc ca cần tiến hành kiểm tra, sửa máy cần đến các chuyền sản xuất xác nhận số lượng kim."
+    },
+    {
+        "serial_no": "27",
+        "question": "Khi phát hiện dị vật việc đầu tiên cần làm gì?",
+        "answer": "Lập tức dừng máy và làm tốt công tác bảo vệ hiện trường, báo cáo chuyền trưởng và QC"
+    },
+    {
+        "serial_no": "28",
+        "question": "Khi vào chuyền sản xuất ( bao gồm sửa máy, kỹ sư, nhân viên kho...) tài liệu không được sử dụng cái gì?",
+        "answer": "Ghim, kẹp, các vật liệu cứng."
+    },
+    {
+        "serial_no": "29",
+        "question": "Yêu cầu về sử dụng kẹp của chuyền sản xuất",
+        "answer": "Cần có mã số, góc kẹp không sắc nhọn"
+    },
+    {
+        "serial_no": "30",
+        "question": "Khi máy dò kim loại cảnh báo cần xử lý như nào",
+        "answer": "Lập tức cách ly sản phẩm, báo cáo chuyền trưởng, ghi chép vào biểu."
+    },
+    {
+        "serial_no": "31",
+        "question": "máy dò kim loại trong quá trình vận hành cần chú ý những gì?",
+        "answer": "khi vừa bật máy hoặc sau khi dừng bật lại,cần phải chờ 5 giây mới bắt đầu cho dò, khi dò kim loại tay của nhân viên không được để lên bên trên của máy."
+    },
+    {
+        "serial_no": "32",
+        "question": "TNA7K DKAB có một vải bao bị NCM C là do bất thường gì?",
+        "answer": "do vải bao chỗ cần cắt đứt nhưng chưa được cắt đứt"
+    },
+    {
+        "serial_no": "33",
+        "question": "chúng ta bị mở đơn NCM A, hãy nói rõ tên sản phẩm, chuyền sản xuất, hiện tượng?",
+        "answer": "sản phẩm TA21S3 SAB，chuyền C0302, trên bề mặt của lỗ lắp đặt có một dị vật giống như ghim bấm giấy"
+    },
+    {
+        "serial_no": "34",
+        "question": "Trong túi khí có dị vật thì hậu quả sẽ như thế nào?",
+        "answer": "Nếu trên túi khí có dị vật, thì trong quá trình túi khí bung ra dị vật sẽ giống như viên đạn bắn vào người, sẽ giết chết người đó."
+    },
+    {
+        "serial_no": "35",
+        "question": "sửa hàng sẽ có hậu quả như thế nào?",
+        "answer": "Người sửa hàng sẽ bị sa thải, bị trừ 1 tháng lương cơ bản,nếu nghiêm trọng có thể bị truy cứu trách nhiệm pháp luật, nhân viên toàn xưởng bị quyên góp vui vẻ liên đới."
+    },
+    {
+        "serial_no": "36",
+        "question": "Sản phẩm TNA7K DKAB có 1 dây đai bị khiếu nại NCM C \nlà bất thường gì?",
+        "answer": "chỉ trên chỉ dưới bị may ngược và dây đai gấp không đạt"
+    },
+    {
+        "serial_no": "37",
+        "question": "Hai tem trắng của sản phẩm TNA6C9X CAB  bị khiếu nại NCM là do nguyên nhân gì?",
+        "answer": "Tem trắng không dán và bị trí dán sai vị trí"
+    },
+    {
+        "serial_no": "38",
+        "question": "TN28K DKAB có điểm mực bị khách hàng khiếu nại \nlà do?",
+        "answer": "quên đóng dấu 1 điểm mực"
+    },
+    {
+        "serial_no": "39",
+        "question": "800B SAB có khách hàng khiếu nại là lỗi gì?",
+        "answer": "gấp túi không tốt"
+    },
+    {
+        "serial_no": "40",
+        "question": "TNA6S9X SAB vải bao bị khiếu nại NCMC là gì?",
+        "answer": "vải bao bị cắt rách"
+    },
+    {
+        "serial_no": "41",
+        "question": "TNA6S9X SAB tem bị khiếu nại NCM C là do lỗi gì?",
+        "answer": "tem in không đạt, chữ bị mất nét."
+    },
+    {
+        "serial_no": "42",
+        "question": "Khu vực GP12 và kho có yêu cầu gì?",
+        "answer": "Chưa được cho phép không được đi vào"
+    },
+    {
+        "serial_no": "43",
+        "question": "Biện pháp chủ yếu với đơn khiếu nại NCM C của tem TNA6S9X SAB",
+        "answer": "Cần làm bàn riêng biệt để máy in, và mặt bàn không được phép nối liền với máy may"
+    },
+    {
+        "serial_no": "44",
+        "question": "Biện pháp khắc phục của đơn khiếu nại TNA6S9X SAB vải bao bị cắt rách là gì",
+        "answer": "Khi cắt chỉ thừa cần lật vải bao về phía ngược lại"
+    },
+    {
+        "serial_no": "45",
+        "question": "Biện pháp khắc phục của đơn khiếu nại của TN28K DAB thiếu điểm mực là gì",
+        "answer": "Làm thêm phòng sai vào công cụ"
+    },
+    {
+        "serial_no": "46",
+        "question": "biện pháp khắc phục của NCMC TN7K DKAB dây đai may ngược là gì",
+        "answer": "cải tiến công cụ, bảo đảm phương hướng gấp đúng và kích thước gấp chính xác"
+    },
+    {
+        "serial_no": "47",
+        "question": "biện pháp khắc phục của NCMC TNA6C9X CAB thiếu dán tem trắng và tem dán lệch",
+        "answer": "lắp đặt thêm phòng sai, nếu như không dán tem hoặc vị trí tem không đúng sẽ không may được"
+    },
+    {
+        "serial_no": "48",
+        "question": "Sản phẩm TA21S3 SAB bị khai NCMA, biện pháp khắc phục chủ yếu là gì?",
+        "answer": "Tất cả các bộ phận trong công ty không được phép sử dụng ghim, tất cả biểu mang vào chuyền sản xuất không được phép có ghim, kẹp, và các loại dị vật kẹp khác."
+    },
+    {
+        "serial_no": "49",
+        "question": "NCM Nếu như xuất hiện vấn đề liên quan đến truy xuất sẽ bị khiếu nại NCM cấp gì?",
+        "answer": "NCM A"
+    },
+    {
+        "serial_no": "50",
+        "question": "Khi để thùng đựng miếng cắt có yêu cầu gì",
+        "answer": "Miệng thùng cần hướng xuống để tránh dị vật rơi vào"
+    },
+    {
+        "serial_no": "51",
+        "question": "Yêu cầu khi công cụ không sử dụng",
+        "answer": "Cần có vải kẹp ở giữa công cụ để đề phòng khi mở công cụ không bị kẹp quá chặt dẫn đến biến dạng"
+    },
+    {
+        "serial_no": "52",
+        "question": "Yêu cầu về máy may khi không sử dụng",
+        "answer": "Cần dùng miếng vải nhỏ để đệm dưới chân vịt"
+    },
+    {
+        "serial_no": "53",
+        "question": "Nếu trong quá trình thao tác cẩm thấy 2 công cụ va đập vào nhau, việc đầu tiên cần phải làm gì",
+        "answer": "Báo cáo chuyền trưởng xem túi khí có bị bục rách hay không, công cụ bị va đập có bị xước mẻ hay không"
+    },
+    {
+        "serial_no": "54",
+        "question": "Khi kim sử dụng đến hạn, máy cảnh báo thì cần phải làm gì",
+        "answer": "Chuyền trưởng xác nhận máy nào kim đã sử dụng đến thời gian cần phải thay, đồng thời thông báo cho người thao tác dừng thao tác, đợi sửa máy đến thay kim xong mới được tiếp tục thao tác"
+    },
+    {
+        "serial_no": "55",
+        "question": "Sau khi người thao tác may xong, đóng dấu tự kiểm tra để làm gì",
+        "answer": "Tự kiểm tra, và sau khi tự kiểm tra xong mới được đóng dấu."
+    },
+    {
+        "serial_no": "56",
+        "question": "Tại sao sau khi phát sinh bất thường chúng ta phải lập tức cách ly",
+        "answer": "Để đảm bảo túi khí sẽ không bị nhầm là sản phẩm OK và bị lưu đi"
+    },
+    {
+        "serial_no": "57",
+        "question": "Tại sao túi khí không được phép có máu hoặc dầu máy",
+        "answer": "Bởi vì dầu máy và máu sau khi khô sẽ cứng và giòn, sẽ làm túi khí yếu đi"
+    },
+    {
+        "serial_no": "58",
+        "question": "Mục đích quét tem nguyên vật liệu để làm gì",
+        "answer": "Truy xuất, phòng sai"
+    },
+    {
+        "serial_no": "59",
+        "question": "Khi sử dụng mực in vẽ đường cần xác nhận những gì",
+        "answer": "Loại mực, màu sắc, hạn sử dụng"
+    },
+    {
+        "serial_no": "60",
+        "question": "Khi thay suốt nếu phát hiện trong suốt không có chỉ, cần làm những gì",
+        "answer": "cần kiểm tra lại những sản phẩm đã may trước đó đến khi tìm thấy sản phẩm không có chỉ dưới"
+    },
+    {
+        "serial_no": "61",
+        "question": "Khi sửa chữa máy cần thay kim có cần ghi vào biểu quản lý thay đổi 4M1E hay không",
+        "answer": "Có"
+    },
+    {
+        "serial_no": "62",
+        "question": "Sau khi sửa máy xong, trước khi rời chuyền sản xuất cần xác nhận gì",
+        "answer": "xác nhận kiểm tra công cụ"
+    },
+    {
+        "serial_no": "63",
+        "question": "Ôc trên mặt bàn máy may nếu như đã bị tháo thì cần xác nhận gì?",
+        "answer": "Ốc có bị mé, sắc nhọn không, đường đánh dấu ốc có bị lệch không"
+    },
+    {
+        "serial_no": "64",
+        "question": "Sửa máy trước khi bắt đầu sửa máy cần làm những gì",
+        "answer": "Kiểm tra lại ghi chép bảo dưỡng lần gần đây nhất, xác nhận xem các vị trí linh kiện của thiết bị có bị lệch"
+    },
+    {
+        "serial_no": "65",
+        "question": "Những nhân viên không thuộc bộ phận sản xuất khi vào chuyền cần làm những gì",
+        "answer": "Trước khi vào trong chuyền sản xuất phải có sự đồng ý của chuyền trưởng"
+    },
+    {
+        "serial_no": "66",
+        "question": "Trước khi sử dụng công cụ cần chú ý những gì",
+        "answer": "Xác nhận trên bề mặt công cụ có hút dị vật hay không, mã công cụ có chính xác hay không, công cụ có còn trong thời gian sử dụng hay không"
+    },
+    {
+        "serial_no": "67",
+        "question": "Tần suất kiểm tra xù lông xù chỉ",
+        "answer": "20 phút"
+    },
+    {
+        "serial_no": "68",
+        "question": "Kiểm tra xù lông xù chỉ như thế nào",
+        "answer": "Cần hướng chỉ trên về phía ánh điện, chỉ dưới cũng cần kiểm tra"
+    },
+    {
+        "serial_no": "69",
+        "question": "Sinh mệnh của công ty chúng ta là gì?",
+        "answer": "Chất lượng là sinh mệnh của công ty, chất lượng mãi là số 1"
+    },
+    {
+        "serial_no": "70",
+        "question": "Yêu cầu khi viết biểu là gì?",
+        "answer": "Người thao tác viết, chuyền trưởng xác nhận, chữ số cần viết rõ ràng để tránh gây hoài nghi về con số."
+    },
+    {
+        "serial_no": "71",
+        "question": "Sau khi phát hiện sửa hàng cần làm gì?",
+        "answer": "Lập tức báo cáo chuyền trưởng và QC xác nhận, báo cáo cho khu trưởng, và cần lập tức thông báo vào nhóm chất lượng"
+    },
+    {
+        "serial_no": "72",
+        "question": "yêu cầu để nguyên vật liệu trên chuyền sản xuất",
+        "answer": "Hàng Đợi kiểm tra và đã kiểm tra cần có tem hiển thị vị trí rõ ràng, không được phép để sai vi trí, không được để lẫn"
+    },
+    {
+        "serial_no": "73",
+        "question": "Sau khi dùng chìa khóa mở khóa phòng sai cảnh báo cần chú ý những gì?",
+        "answer": "Cần có QC xác nhận, và QC cần đóng dấu xác nhận trên sản phẩm túi khí đó."
+    },
+    {
+        "serial_no": "74",
+        "question": "3 phương pháp kiểm soát kích thước CC/SC",
+        "answer": "Phòng sai, SPC, 100% toàn kiểm"
+    },
+    {
+        "serial_no": "75",
+        "question": "Yêu cầu mới về phương diện quản lý dị vật của ALV là gì?",
+        "answer": "Không được phép sử dụng các loại ghim kẹp"
+    },
+    {
+        "serial_no": "76",
+        "question": "70% bất thường hàng loạt do đâu dẫn đến",
+        "answer": "thay đổi"
+    },
+    {
+        "serial_no": "77",
+        "question": "Những người nào dễ dẫn đến bất thường hàng loạt",
+        "answer": "chuyền trưởng, kỹ sư, sửa máy"
+    },
+    {
+        "serial_no": "78",
+        "question": "Sau khi thay kim xong cần kiểm tra những nội dung gì?",
+        "answer": "Sau khi thay kim xong sửa máy cần kiểm tra vị trí kim"
+    },
+    {
+        "serial_no": "79",
+        "question": "Sau khi thay kim xong Ai phụ trách kiểm tra xác nhận?",
+        "answer": "người thao tác, sửa máy, chuyền trưởng , QC"
+    },
+    {
+        "serial_no": "80",
+        "question": "Khi công dụng đang thi công trên chuyền sản xuất, cần chú ý những gì",
+        "answer": "Thông thường chỉ có thể dừng chuyền để thi công, trong trường hợp đặc biệt phải có sự đồng ý của chủ quản sản xuất mới và phải làm tốt công tác bảo hộ thì mới được thi công"
+    },
+    {
+        "serial_no": "81",
+        "question": "Công dụng khi mài các vật dụng cần chú ý những gì",
+        "answer": "không được phép mài trong chuyền may, mà khi mài phải tránh xa khu vực hàng thành phẩm và nguyên vật liệu"
+    },
+    {
+        "serial_no": "82",
+        "question": "TNA7P1 PAB có để lọt 1 sản phẩm sang HMT Hạ Môn là bất thường gì",
+        "answer": "Có 1 tem thừa rơi trong túi khí"
+    },
+    {
+        "serial_no": "83",
+        "question": "vải tai SC2E CAB bị khiếu nại vấn đề gì",
+        "answer": "đặt ngược miếng tai"
+    },
+    {
+        "serial_no": "84",
+        "question": "SC2E CAB vải bao bị khiếu nại vấn đề gì",
+        "answer": "vải bao bị rách"
+    },
+    {
+        "serial_no": "85",
+        "question": "Yêu cầu để túi khí sau khi đã may xong viền bao",
+        "answer": "Lỗ lắp đặt và lỗ thoát khí không được hướng lên trên, phòng tránh dị vật rơi vào trong túi khí"
+    },
+    {
+        "serial_no": "86",
+        "question": "Sử dụng cây lộn túi cần chú ý những gì",
+        "answer": "xác nhận cột lộn túi có sắc nhọn bị xước hay không"
+    },
+    {
+        "serial_no": "87",
+        "question": "Trong quá trình lộn túi cần chú ý những gì",
+        "answer": "Cột lộn túi không được chọc vào dây đai"
+    },
+    {
+        "serial_no": "88",
+        "question": "Yêu cầu về cải thiện",
+        "answer": "Cần đánh giá và nghiệm chứng đầy đủ phương án cải thiện, đồng thời cần lưu trữ lại những hình ảnh trước và sau khi cải thiện"
+    },
+    {
+        "serial_no": "89",
+        "question": "Ngày 23/01/2023 Khách hàng AJT khai đơn khiếu nại NCM C về vấn đề gì",
+        "answer": "NISSAN TNA7K DKAB Lỗ vải bao"
+    },
+    {
+        "serial_no": "90",
+        "question": "Ngày 23/02/2023 Khách hàng AZH khai đơn khiếu nại NCM A về vấn đề gì",
+        "answer": "TA21S3 SAB lỗ lắp đặt có đinh kim"
+    },
+    {
+        "serial_no": "91",
+        "question": "Ngày 18/07/2023 khách hàng YFSS Yan feng khiếu nại sản phẩm G45 ECE PAB  vấn đề gì",
+        "answer": "Điểm mực nhạt dẫn đến không thể quét được."
+    },
+    {
+        "serial_no": "92",
+        "question": "Ngày 06/07/2023 Khách hàng AJT khai đơn khiếu nại NCM C về vấn đề gì",
+        "answer": "Mã linh kiện sản phẩm trên tem thùng không khớp với sản phẩm trong thùng"
+    },
+    {
+        "serial_no": "93",
+        "question": "Ngày 26/02/2024 khách hàng AZH khiếu nại sản phẩm TN28K DKAB  vấn đề gì",
+        "answer": "Thiếu vẽ đường gấp túi."
+    },
+    {
+        "serial_no": "94",
+        "question": "Ngày 05/04/2024 khách hàng khiếu nại NISSAN IC vấn đề gì",
+        "answer": "Vị trí may miệng ống dẫn khí may vào miếng cắt dẫn đến khách hàng không lắp đặt được"
+    },
+    {
+        "serial_no": "95",
+        "question": "Ngày 24/04/2024 khách hàng khiếu nại NCM C sản phẩm TNA7K DKAB  vấn đề gì",
+        "answer": "Vải bao đóng thiếu 2 điểm mực đỏ"
+    },
+    {
+        "serial_no": "96",
+        "question": "Ngày 06/05/2024 khách hàng khiếu nại NISSAN IC vấn đề gì",
+        "answer": "Đường kính cuộn túi to hơn tiêu chuẩn"
+    },
+    {
+        "serial_no": "97",
+        "question": "Ngày 20/2/2025 khách hàng AIB khai đơn NCM NA về sản phẩm AI3 5DR RH là gì",
+        "answer": "Đặt ngược móc sắt"
+    },
+    {
+        "serial_no": "98",
+        "question": "Ngaỳ 26/2/2025 khách hàng YFSS khiếu nại G45 PAB ECE về vấn đề gì",
+        "answer": "Miếng tăng cường lỗ lắp đặt bị đường may dự phòng lỗ thoát khí may vào"
+    },
+    {
+        "serial_no": "99",
+        "question": "Ngày 29/12/2023, dưới cắt phát một vụ bất thường về an toàn là bất thường gì",
+        "answer": "Máy cắt số 2 bị cháy , cháy tấm 40 giây mới phát hiện"
+    },
+    {
+        "serial_no": "100",
+        "question": "Ngày 15/3/2025 có một bất thường dẫn đến hàng US4 SAB báo phế hàng :5389pec là bất thường gì",
+        "answer": "Mã linh kiện sản phẩm bị sai"
+    },
+    {
+        "serial_no": "101",
+        "question": "Tháng 6 do kỹ sư không đánh giá ra điểm thay đổi của bản vẽ khách hàng dẫn đến bất thường là gì",
+        "answer": "1.16/6/2025 BMW LCI US DAB may dây dút cố định may sai lớp\n2.18/6/2025 J4U PAB dùng sai chỉ may"
+    },
+    {
+        "serial_no": "103",
+        "question": "“Nguyên tắc 3 không ” của Sản xuất an toàn :",
+        "answer": "không làm hại bản thân, không làm hại người khác, không để người khác làm hại mình."
+    },
+    {
+        "serial_no": "104",
+        "question": "Bốn giai đoạn phát triển của nhận thức về an toàn:",
+        "answer": "muốn tôi được an toàn, tôi muốn sự an toàn, tôi biết cách để được an toàn và tôi quản lý sự an toàn"
+    },
+    {
+        "serial_no": "105",
+        "question": "Nếu phát hiện cháy bên trong máy cắt thì nên chọn",
+        "answer": "bình chữa cháy dạng khí carbon dioxide để dập tắt đám cháy"
+    },
+    {
+        "serial_no": "106",
+        "question": "Sau khi bị hóa chất vào mắt, bạn nên:",
+        "answer": "dùng nhiều nước để rửa mắt ngay và có thể nhanh chóng đưa đi bệnh viện chữa trị."
+    },
+    {
+        "serial_no": "107",
+        "question": "Đối với công nhân mới vào đơn vị sản xuất kinh doanh, thời gian huấn luyện an toàn trước khi làm việc:",
+        "answer": "không dưới 24 giờ"
+    },
+    {
+        "serial_no": "108",
+        "question": "Nguyên tắc ba không trong Bản cam kết là gì?",
+        "answer": "Không cố ý phá hoại sản phẩm, không che giấu bất thường và không bao che bất thường"
+    },
+    {
+        "serial_no": "109",
+        "question": "Các loại tai nạn chính có thể xảy ra do thiết bị điện:",
+        "answer": "điện giật và cháy nổ."
+    },
+    {
+        "serial_no": "110",
+        "question": "Bốn chất thải công nghiệp là gì:",
+        "answer": "nước thải, khí thải, cặn thải và tiếng ồn"
+    },
+    {
+        "serial_no": "111",
+        "question": "Quá trình tiến hành diễn tập khẩn cấp có thể được chia thành ba giai đoạn:",
+        "answer": "chuẩn bị diễn tập, thực hiện diễn tập và tổng kết diễn tập."
+    },
+    {
+        "serial_no": "112",
+        "question": "Các công trình an toàn đối với dự án xây dựng mới, tái thiết, mở rộng của đơn vị sản xuất, kinh doanh (sau đây gọi chung là dự án xây dựng) phải được sản xuất, sử dụng đồng thời với dự án chính",
+        "answer": "thiết kế đồng thời, xây dựng đồng thời, đầu tư đồng thời"
+    },
+    {
+        "serial_no": "113",
+        "question": "Cốt lõi của sản xuất an toàn là",
+        "answer": "bảo vệ an toàn tính mạng và sức khỏe nghề nghiệp của người lao động"
+    },
+    {
+        "serial_no": "114",
+        "question": "Chính sách an toàn và sức khỏe môi trường của công ty chúng tôi:",
+        "answer": "tiết kiệm năng lượng và giảm thiểu chất thải, vì lợi ích của nhân loại, quan tâm nhân viên và phục vụ xã hội."
+    },
+    {
+        "serial_no": "115",
+        "question": "Sản xuất an toàn là thống nhất sản xuất với an toàn, mục đích của nó là",
+        "answer": "an toàn thúc đẩy sản xuất, sản xuất phải an toàn"
+    },
+    {
+        "serial_no": "116",
+        "question": "Điều tra và xử lý sự cố theo nguyên tắc “ 4 không bỏ qua”:",
+        "answer": "tức là không xác định được nguyên nhân tai nạn không bỏ qua , không thực hiện các biện pháp phòng ngừa không bỏ qua, người lao động không được huấn luyện đào tạo không bỏ qua và người gây ra tai nạn không bị xử lý không bỏ qua."
+    },
+    {
+        "serial_no": "117",
+        "question": "Các đơn vị sản xuất kinh doanh phải lắp đặt (cái gì?) dễ nhìn dễ nhận biết tại các địa điểm sản xuất, kinh doanh và trên các trang thiết bị liên quan có yếu tố rủi ro cao.",
+        "answer": "(biển cảnh báo an toàn)"
+    },
+    {
+        "serial_no": "118",
+        "question": "Các biện pháp an toàn khi vận hành xe nâng:",
+        "answer": "1.Người lái xe trước tiên phải thắt dây an toàn khi vận hành xe nâng; 2. Không ai được phép đến gần trong phạm vi 1.5 m hoạt động của xe nâng 3. Khi lùi xe nâng, trước tiên người lái xe phải kiểm tra; tình hình xung quanh và xác nhận rằng nó an toàn mới được lùi xe; 4. Không được phép đứng hoặc chở người khác trên tất cả các bộ phận của xe nâng; khi lái xe chở hàng hóa không được vượt tải, khi chở hàng khồng được chở hàng quá cao;"
+    },
+    {
+        "serial_no": "119",
+        "question": "Nguyên tắc ba không của sản xuất túi khí:",
+        "answer": "không chấp nhận sản phẩm bị lỗi, không sản xuất sản phẩm bị lỗi và không để sản phẩm bị lỗi lưu đi công đoạn sau."
+    },
+    {
+        "serial_no": "120",
+        "question": "Những nguy hiểm có thể xảy ra khi sử dụng bình chữa cháy cacbon dioxide ở nơi nhỏ hẹp, không khí lưu thông kém là :",
+        "answer": "( thiếu oxy)"
+    },
+    {
+        "serial_no": "121",
+        "question": "Khi mở cửa phòng mà ngửi thấy mùi khí gas, nên nhanh chóng",
+        "answer": "( mở cửa ra vào và và cửa sổ để thông gió)"
+    },
+    {
+        "serial_no": "122",
+        "question": "Quần áo làm việc phải vừa vặn, không quá rộng hoặc quá dài để tránh cái gì  ?",
+        "answer": "bị vướng vào vòng quay của máy"
+    },
+    {
+        "serial_no": "123",
+        "question": "khi xe đang đổ xăng không được làm gì",
+        "answer": "(không hút thuốc, không sử dụng điện thoại cầm tay, không khởi động xe)"
+    },
+    {
+        "serial_no": "124",
+        "question": "Nguyên nhân chính gây ra vụ cháy chết người là :",
+        "answer": "ngạt thở"
+    },
+    {
+        "serial_no": "125",
+        "question": "Có 2 điểm mấu chốt trong việc đội mũ bảo hiểm đúng cách:",
+        "answer": "1 là giữ lớp lót và vỏ mũ phải có khoảng cách hở nhất định, 2 là (dây quai hàm dưới phải được siết chặt)"
+    },
+    {
+        "serial_no": "126",
+        "question": "Nếu ethanol bắt lửa, loại bình chữa cháy nào không dung để dập lửa (bình chữa cháy nào); có thể dùng:bình chữa cháy nào",
+        "answer": "Nếu ethanol bắt lửa, loại bình chữa cháy nào không dung để dập lửa (bình chữa cháy bằng bọt); có thể dùng: bình chữa cháy bột khô hoặc bình chữa cháy cacbon dioxide."
+    },
+    {
+        "serial_no": "127",
+        "question": "Khi chữa cháy phương pháp chữa cháy là hạ nhiệt độ của vật cháy xuống dưới điểm bắt lửa để ngứng cháy",
+        "answer": "( dập lửa làm mát)"
+    },
+    {
+        "serial_no": "128",
+        "question": "Giáo dục an toàn 3 cấp độ cho công nhân mới đề cập đến",
+        "answer": "( cấp nhà máy,cấp xưởng, cấp đội)"
+    },
+    {
+        "serial_no": "129",
+        "question": "Loại bình chữa cháy nào thường được trang bị trong xưởng may",
+        "answer": "( bình chữa cháy bột khô)"
+    },
+    {
+        "serial_no": "130",
+        "question": "Đơn vị sản xuất, kinh doanh có trách nhiệm thông báo trung thực cho người lao động về sự tồn tại của",
+        "answer": "(yếu tố nguy hiểm, biện pháp phòng ngừa, biện pháp khẩn cấp khi xảy ra tai nạn) tại nơi làm việc và tại các vị trí làm việc."
+    },
+    {
+        "serial_no": "131",
+        "question": "Thời điểm tốt nhất để dập lửa vụ cháy tòa nhà là trong vòng bao nhiêu phút. Sau thời gian này, bạn phải nghĩ cách thoát khỏi hiện trường vụ cháy.",
+        "answer": "5-7 phút"
+    },
+    {
+        "serial_no": "132",
+        "question": "Nguy cơ tai nạn là chỉ những yếu tố có thể dẫn đến tai nạn trong hệ thống sản xuất:",
+        "answer": "hành vi không an toàn của con người, trạng thái không an toàn của đồ vật và sai sót trong quản lý."
+    },
+    {
+        "serial_no": "133",
+        "question": "Triết lý làm việc sản xuất an toàn:",
+        "answer": "(hướng đến con người, đặt con người lên hàng đầu và tính mạng là trên hết) đặt việc bảo vệ tính mạng và sự an toàn của con người lên hàng đầu và thiết lập khái niệm phát triển an toàn."
+    },
+    {
+        "serial_no": "134",
+        "question": "“Ba vi phạm” về an toàn sản xuất là:",
+        "answer": "(vi phạm chỉ huy, vi phạm thao tác, vi phạm kỷ luật lao động)"
+    },
+    {
+        "serial_no": "135",
+        "question": "Bốn loại biển báo an toàn là 4 loại biển nào",
+        "answer": "(biển báo cấm, biển cảnh báo, biển hiệu lệnh và biển chỉ dẫn);"
+    },
+    {
+        "serial_no": "136",
+        "question": "Phân tích mối nguy hiểm trong công việc xác định các nguồn nguy hiểm và các sự kiện tiềm ẩn ở mỗi bước:",
+        "answer": "Các nguồn nguy hiểm cần được xem xét từ bốn khía cạnh: yếu tố con người, yếu tố đồ vật, yếu tố môi trường và yếu tố quản lý;"
+    },
+    {
+        "serial_no": "137",
+        "question": "“Năm yếu tố” của an toàn sản xuất:",
+        "answer": "hệ thống pháp luật an toàn, trách nhiệm an toàn, đầu tư an toàn, công nghệ an toàn và văn hóa an toàn"
+    },
+    {
+        "serial_no": "138",
+        "question": "Khi doanh nghiệp tổ chức cho người lao động giáo dục, huấn luyện an toàn sản xuất an toàn, người lao động cần được đối xử như thế nào?",
+        "answer": "(Phải tham gia và nâng cao chất lượng an toàn của mình thông qua huấn luyện)."
+    },
+    {
+        "serial_no": "139",
+        "question": "Sản phẩm bảo hộ lao động đặc biệt phải có “ba giấy chứng nhận” và “một nhãn hiệu”, đó là:",
+        "answer": "giấy phép sản xuất, giấy chứng nhận sản phẩm, giấy chứng nhận thẩm định an toàn và có nhãn hiệu an toàn."
+    },
+    {
+        "serial_no": "140",
+        "question": "Mục tiêu cuối cùng của công tác tuyên truyền, huấn luyện về an toàn là",
+        "answer": "(nâng cao tố chất về sản xuất an toàn của cán bộ, công nhân viên)"
+    },
+    {
+        "serial_no": "141",
+        "question": "Các mối nguy hiểm chính do hóa chất độc hại gây ra là",
+        "answer": "(cháy, nổ, ngộ độc, ăn mòn và ô nhiễm môi trường)."
+    },
+    {
+        "serial_no": "142",
+        "question": "Nơi hàn không nên cất giữ",
+        "answer": "( đồ dễ cháy)"
+    },
+    {
+        "serial_no": "143",
+        "question": "3 yếu tố cháy",
+        "answer": "( chất cháy, vật liệu hỗ trợ cháy,nguồn gây cháy)"
+    },
+    {
+        "serial_no": "144",
+        "question": "Ba bộ áo liền quần bó sát mà công nhân mặc khi vận hành máy móc là nói đến",
+        "answer": "( cổ áo bó sát, cổ tay áo bó sát và viền áo bó sát)"
+    },
+    {
+        "serial_no": "145",
+        "question": "Bên trong hộp cứu hỏa thường được trang bị",
+        "answer": "(súng phun nước chữa cháy, vòi chữa cháy)"
+    },
+    {
+        "serial_no": "146",
+        "question": "Bình chữa cháy nào không sử dụng khi có đám cháy liên quan đến vật thể sống?",
+        "answer": "bình chữa cháy nước, bình chữa cháy bọt"
+    },
+    {
+        "serial_no": "147",
+        "question": "Sản xuất vật liệu phải được bố trí và không được bịt kín:",
+        "answer": "lối thoát hiểm"
+    },
+    {
+        "serial_no": "148",
+        "question": "Để dập lửa do điện việc đầu tiên bạn phải làm là",
+        "answer": "cắt nguồn điện"
+    },
+    {
+        "serial_no": "149",
+        "question": "Cách đập lửa bằng bình chữa cháy xách tay đúng:",
+        "answer": "rút chốt an toàn, một tay cầm vòi chữa cháy,tay kia cầm bình chữa cháy và ấn vào tay cầm"
+    },
+    {
+        "serial_no": "150",
+        "question": "Khi quần áo trên người bị cháy,có thể ngay lập tức:",
+        "answer": "lăn tại chỗ để dập tắt"
+    },
+    {
+        "serial_no": "151",
+        "question": "Nguyên nhân gây cháy mạch điện :",
+        "answer": "đoản mạch, quá tải,điện trở tiếp xúc quá mức, hồ quang và tia lửa điện do mạch sinh ra."
+    },
+    {
+        "serial_no": "152",
+        "question": "Khi nhân viên đi làm và tan làm phải đi lại như nào?",
+        "answer": "Nên đi bộ theo lộ trình đã chỉ định, nghiêm cấm đi qua trạm sản xuất và công trường."
+    },
+    {
+        "serial_no": "153",
+        "question": "Ngày 03/02/2025 khách hàng ABR khai đơn NCM N/A sản phẩm HKMC SU2I IC về vấn đề gì",
+        "answer": "Vải tai bị cắt rách"
+    },
+    {
+        "serial_no": "154",
+        "question": "Ngày 21/02/2025 khách hàng AIB khai đơn NCM N/A sản phẩm AI3 PE 5DR CAB về vấn đề gì",
+        "answer": "Đặt ngược móc sắt"
+    },
+    {
+        "serial_no": "155",
+        "question": "Ngày 22/04/2025 khách hàng APA khai đơn NCM C sản phẩm J4U PAB về vấn đề gì",
+        "answer": "Kích thước túi khí không đạt do bị co vải"
+    },
+    {
+        "serial_no": "156",
+        "question": "Ngày 14/08/2025 khách hàng AQW khai đơn NCM B sản phẩm NISSAN P13C PAB về vấn đề gì",
+        "answer": "Lỗ an toàn không mở hoàn toàn, gây ảnh hưởng đến tính năng của túi khí"
+    },
+    {
+        "serial_no": "157",
+        "question": "Ngày 19/08/2025 khách hàng APA khai đơn NCM NA sản phẩm  J4U PAB",
+        "answer": "Dùng sai chỉ"
+    },
+    {
+        "serial_no": "158",
+        "question": "Ngày 24/09/2025 khách hàng AZH khai đơn NCM B sàn phẩm MAZDA TA26S SAB về vấn đề gì",
+        "answer": "Thiếu bước gấp túi khí"
+    },
+    {
+        "serial_no": "159",
+        "question": "Ngày 24/11/2024 khách hàng AQW khai đơn NCM NA  sản phẩm NISSAN P13C MY27 PAB về vấn đề gì",
+        "answer": "Dây đai ngắn hơn so với thông số kĩ thuật"
+    },
+    {
+        "serial_no": "160",
+        "question": "Ngày 02/12/2025 khách hàng INRA khai đơn NCM C sản phẩm MAHINDRA S201 IC CAB về vấn đề gì",
+        "answer": "May thiếu miếng tai"
+    },
+    {
+        "serial_no": "161",
+        "question": "Ngày 21/01/2026 khách hàng AOA khiếu nại về nguyên vật liệu về vấn đề gì",
+        "answer": "Pallet bị hỏng trên đường vận chuyển"
+    },
+    {
+        "serial_no": "162",
+        "question": "Ngày 02/02/2026 khách hàng ABR khai đơn NCM NA sản phẩm NISSAN P02H SAB về vấn đề gì",
+        "answer": "Chữ cái trên tem không khớp với nội dung sau khi scan"
+    },
+    {
+        "serial_no": "163",
+        "question": "Ngày 10/02/2026 khách hàng AIB khai đơn NCM A sản phẩm AI3 5DR PE CAB về vấn đề gì",
+        "answer": "May sai lớp của miếng Y sock"
+    },
+    {
+        "serial_no": "164",
+        "question": "Ngày 27/03/2026 khách hàng AKR khiếu nại sản phẩm NQ5 DS DAB về vấn đề gì",
+        "answer": "Điểm mực không đủ độ đậm trên túi khí"
+    },
+    {
+        "serial_no": "165",
+        "question": "Ngày 21/04/2026 khách hàng AZH khiếu nại sản phẩm Mazda TA26S SAB về vấn đề gì",
+        "answer": "Đường gấp túi không đi qua điểm mực"
+    },
+    {
+        "serial_no": "166",
+        "question": "Ngày 28/04/2026 khách hàng BKI khiếu nại sản phẩm MQB8 PAB về vấn đề gì",
+        "answer": "Tình trạng miếng khuếch tán không được đẩy vào trong"
+    },
+    {
+        "serial_no": "167",
+        "question": "Ngày 29/04/2026 khách hàng AOA khai đơn NCM NA sản phẩm Subaru SAB về vấn đề gì",
+        "answer": "Điểm mực bị nhòe"
+    }
+]
