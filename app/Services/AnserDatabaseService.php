@@ -8,9 +8,9 @@ class AnserDatabaseService
 {
     public function getUnanswered()
     {
-        $data = AnserDatabase::where('is_answered', 0)->get();
+       $data = AnserDatabase::where('is_answered', 0)->get();
 
-        return response()->json($data);
+        return $data->toArray();
     }
 
     public function getAll()

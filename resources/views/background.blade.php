@@ -1,35 +1,10 @@
-{{-- <!doctype html>
-<html lang="vi">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ques and Ans Layout</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-
-            background-image: url('{{ asset('image/Picture-background.jpg') }}');
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 100% 100%;
-        }
-    </style>
-</head>
-<body>
-    <div class="page">
-        
-    </div>
-</body>
-</html> --}}
-
-
 <!doctype html>
 <html lang="vi">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ques and Ans Layout</title>
+    <title>Cuộc thi kiến thức an toàn và chất lượng</title>
+    <link rel="icon" href="{{ asset('image/iconHMT.ico') }}">
     <style>
         body {
             margin: 0;
