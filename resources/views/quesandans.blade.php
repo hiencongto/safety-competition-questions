@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="utf-8">
@@ -7,6 +7,7 @@
     <title>Cuộc thi kiến thức an toàn và chất lượng</title>
     <link rel="icon" href="{{ asset('image/iconHMT.ico') }}">
     <style>
+        /* Reset & base styles */
         * {
             margin: 0;
             padding: 0;
@@ -29,6 +30,7 @@
             height: 100%;
         }
 
+        /* GRID OVERLAY WITH RESTORED COLORS – VISIBLE LAYOUT GUIDES */
         .grid-overlay {
             position: absolute;
             top: 0;
@@ -38,37 +40,87 @@
             display: grid;
             grid-template-columns: repeat(24, 1fr);
             grid-template-rows: repeat(24, 1fr);
-            pointer-events: none;
+            /* pointer-events: none;   */
         }
 
-        .textbox-1 {
-            grid-column: 5 / 20;
-            grid-row: 10 / 15;
+
+        .grid-overlay > div {
             background-color: transparent;
-            padding: 15px;
-            font-size: 25px;
-            pointer-events: auto;
+            border: 1px solid transparent;
+            transition: all 0.1s ease;
+            /* pointer-events: none; */
         }
 
-        .textbox-2 {
-            grid-column: 5 / 20;
-            grid-row: 18 / 23;
+        /* Optional hover effect to highlight cells (does not affect functionality) */
+        .grid-overlay > div:hover {
             background-color: transparent;
-            padding: 15px;
-            font-size: 25px;
+            border-color: transparent;
+        }
+
+        /* Text containers – transparent background, placed above grid */
+        .textbox-1,
+        .textbox-2,
+        .question-id-box {
             pointer-events: auto;
+            z-index: 5;
         }
 
         .textbox-1,
         .textbox-2 {
+            background-color: transparent !important;
+            border: none !important;
+            pointer-events: auto;
+            z-index: 5;
+        }
+
+        .question-id-box {
+            grid-column: 7 / 9;
+            grid-row: 8 / 10;
+            padding: 12px 16px;
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+            background: rgba(255, 255, 255, 0.75);
+            text-align: center;
+        }
+
+        /* Question area (grid position: columns 5-20, rows 10-15) */
+        .textbox-1 {
+            grid-column: 5 / 20;
+            grid-row: 10 / 15;
+            padding: 15px;
+            font-size: 25px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             white-space: pre-wrap;
+            color: #1e2a3a;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.6);
         }
 
-        /* Overlay with backdrop-filter - blurs only the background content */
+        /* Answer area (grid position: columns 5-20, rows 18-23) */
+        .textbox-2 {
+            grid-column: 5 / 20;
+            grid-row: 18 / 23;
+            padding: 15px;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            white-space: pre-wrap;
+            color: #1e2a3a;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+        }
+
+        /* Overlay with backdrop-filter – blurs only the background content */
         .slot-overlay {
             position: fixed;
             top: 0;
@@ -81,7 +133,7 @@
             display: none;
         }
 
-        /* Slot machine container - placed above the overlay, not blurred */
+        /* Slot machine container – appears above overlay, not blurred */
         .slot-container {
             position: fixed;
             top: 50%;
@@ -137,6 +189,7 @@
             box-shadow: 0 2px 0 #b37b00;
         }
 
+        /* Button to toggle slot machine visibility */
         .toggle-slot-btn {
             position: fixed;
             bottom: 20px;
@@ -152,6 +205,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
+        /* Remaining questions counter */
         .remain-info {
             position: fixed;
             bottom: 20px;
@@ -165,7 +219,7 @@
             pointer-events: none;
         }
 
-        /* Nút câu hỏi tiếp theo */
+        /* Next question button */
         .next-question-btn {
             position: fixed;
             bottom: 80px;
@@ -213,7 +267,7 @@
             transform: translateY(2px);
         }
 
-        /* Nút xem đáp án trong textbox-2 */
+        /* Answer reveal button (can be injected by JS) */
         .view-answer-btn {
             background-color: #4CAF50;
             color: white;
@@ -236,7 +290,21 @@
             .spin-slot-btn { width: 140px; height: 55px; font-size: 22px; }
             .next-question-btn { bottom: 70px; font-size: 14px; padding: 8px 16px; }
             .remain-info { bottom: 20px; font-size: 12px; }
+            .question-id-box { font-size: 22px; padding: 10px 14px; }
+            /* .grid-overlay > div {
+                border-width: 0.5px;
+                background-color: rgba(65, 105, 225, 0.1);
+            } */
         }
+
+        /* Utility class to temporarily hide grid colors (toggle via Ctrl+Alt+G) */
+        /* .grid-overlay.hide-grid > div {
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .grid-overlay.hide-grid > div:hover {
+            background-color: transparent;
+        } */
     </style>
 </head>
 <body>
@@ -250,6 +318,7 @@
     <div class="grid-overlay">
         @for ($i = 0; $i < 576; $i++) <div style="pointer-events: none;"></div> @endfor
         <div class="textbox-1" id="questionBox" contenteditable="false" placeholder="Câu hỏi sẽ xuất hiện ở đây..."></div>
+        <div class="question-id-box" id="questionIdBox"></div>
         <div class="textbox-2" id="answerBox" contenteditable="false" placeholder="Đáp án sẽ hiện ở đây..."></div>
     </div>
 

@@ -15,6 +15,7 @@
     const reel3 = document.getElementById('reel3');
 
     const questionBox = document.getElementById('questionBox');
+    const questionIdBox = document.getElementById('questionIdBox');
     const answerBox = document.getElementById('answerBox');
     const remainInfo = document.getElementById('remainInfo');
 
@@ -228,8 +229,9 @@
             spinAudio.currentTime = 0;
         }
 
-        // Show question
+        // Show question and its ID
         questionBox.innerText = `${question.question}`;
+        questionIdBox.innerText = `${selectedId}`;
 
         // IMPORTANT FIX: store full object (not only string)
         resetAnswer();
