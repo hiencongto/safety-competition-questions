@@ -17,6 +17,7 @@
     const questionBox = document.getElementById('questionBox');
     const questionIdBox = document.getElementById('questionIdBox');
     const answerBox = document.getElementById('answerBox');
+    const answerButtonsContainer = document.getElementById('answerButtonsContainer');
     const remainInfo = document.getElementById('remainInfo');
 
     // ================= DATA =================
@@ -36,19 +37,20 @@
 
     // Current question state
     let currentQuestion = null;
+    let hasAnsweredForCurrentQuestion = false; 
 
     // ================= UI =================
 
     function updateRemainInfo() {
         const hasRemaining = remainingIds.length > 0;
 
-        remainInfo.innerText = `Câu còn lại: ${remainingIds.length}`;
+        remainInfo.innerText = `Còn lại: ${remainingIds.length}`;
 
         spinBtn.disabled = !hasRemaining;
         nextBtn.disabled = !hasRemaining;
 
         spinBtn.innerText = hasRemaining ? "QUAY" : "HẾT";
-        nextBtn.innerText = hasRemaining ? "Câu hỏi tiếp theo" : "Hết câu hỏi";
+        nextBtn.innerText = hasRemaining ? "Next" : "Hết câu hỏi";
     }
 
     // Pick random question ID
@@ -117,49 +119,83 @@
 
     // ================= ANSWER SYSTEM =================
 
-    // Show answer button only (NOT the answer itself)
+
+    async function markAsAnswered(questionId) {
+        console.log("Marking question as answered:", questionId);
+        try {
+            const token = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+
+            await fetch('/HMT/answered', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': token || ''
+                },
+                body: JSON.stringify({ id: questionId })
+            });
+
+            console.log("Marked as answered:", questionId);
+            updateRemainInfo();
+        } catch (err) {
+            console.error('Failed to mark answered:', err);
+        }
+    }
+
     function showAnswerButton() {
         answerBox.innerHTML = "";
+        answerButtonsContainer.innerHTML = "";
 
-        const btn = document.createElement("button");
-        btn.className = "view-answer-btn";
-        btn.innerText = "Xem đáp án";
+        const trueBtn = document.createElement("button");
+        trueBtn.innerText = "Đúng";
+        trueBtn.className = "answer-btn true-btn";
 
-        btn.addEventListener("click", async () => {
+        const falseBtn = document.createElement("button");
+        falseBtn.innerText = "Sai";
+        falseBtn.className = "answer-btn false-btn";
+
+        const handleAnswer = (isCorrect) => {
+            if (hasAnsweredForCurrentQuestion) return;
             if (!currentQuestion?.answer) {
                 answerBox.innerText = "Chưa có đáp án";
                 return;
             }
 
-            // reveal answer
+            const soundUrl = isCorrect ? '/sound/true.wav' : '/sound/false.mp3';
+            const audio = new Audio(soundUrl);
+            audio.play().catch(e => console.warn("Sound play error:", e));
+
             answerBox.innerText = currentQuestion.answer;
+            answerBox.style.backgroundColor = isCorrect ? '#4CAF50' : '#f44336';
+            answerBox.style.color = 'white';
+            answerBox.style.padding = '15px';
+            answerBox.style.borderRadius = '10px';
 
-            // send POST to server to mark as answered
-            console.log("Marking question as answered:", currentQuestion.id);
-            try {
-                const token = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+            markAsAnswered(currentQuestion.id);
 
-                await fetch('/HMT/answered', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': token || ''
-                    },
-                    body: JSON.stringify({ id: currentQuestion.id })
-                });
+            // Hide answer buttons after result is shown
+            answerButtonsContainer.innerHTML = "";
 
-                console.log("Marked as answered:", currentQuestion.id);
-                updateRemainInfo();
-            } catch (err) {
-                console.error('Failed to mark answered:', err);
-            }
-        });
+            trueBtn.disabled = true;
+            falseBtn.disabled = true;
+            hasAnsweredForCurrentQuestion = true;
+        };
 
-        answerBox.appendChild(btn);
+        trueBtn.addEventListener("click", () => handleAnswer(true));
+        falseBtn.addEventListener("click", () => handleAnswer(false));
+
+        answerButtonsContainer.appendChild(trueBtn);
+        answerButtonsContainer.appendChild(falseBtn);
     }
 
     function resetAnswer() {
         answerBox.innerHTML = "";
+        answerButtonsContainer.innerHTML = "";
+
+        answerBox.style.backgroundColor = "";
+        answerBox.style.color = "";
+        answerBox.style.padding = "";
+        answerBox.style.borderRadius = "";
+        hasAnsweredForCurrentQuestion = false; 
     }
 
     // ================= SLOT UI =================
@@ -233,7 +269,7 @@
         questionBox.innerText = `${question.question}`;
         questionIdBox.innerText = `${selectedId}`;
 
-        // IMPORTANT FIX: store full object (not only string)
+        // Reset khu vực đáp án và tạo 2 nút mới
         resetAnswer();
         showAnswerButton();
 

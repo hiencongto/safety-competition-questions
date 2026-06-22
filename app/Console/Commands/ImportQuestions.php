@@ -29,6 +29,8 @@ class ImportQuestions extends Command
 
         try {
 
+            Question::truncate();
+
             DB::transaction(function () use ($data) {
 
                 foreach ($data as $item) {

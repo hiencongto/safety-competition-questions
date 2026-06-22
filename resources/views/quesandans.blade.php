@@ -65,10 +65,14 @@
             z-index: 5;
         }
 
-        .textbox-1,
-        .textbox-2 {
+        .textbox-1 {
             background-color: transparent !important;
             border: none !important;
+            pointer-events: auto;
+            z-index: 5;
+        }
+
+        .textbox-2 {
             pointer-events: auto;
             z-index: 5;
         }
@@ -91,9 +95,9 @@
         /* Question area (grid position: columns 5-20, rows 10-15) */
         .textbox-1 {
             grid-column: 5 / 20;
-            grid-row: 10 / 15;
+            grid-row: 9 / 16;
             padding: 15px;
-            font-size: 25px;
+            font-size: 35px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -106,9 +110,9 @@
 
         /* Answer area (grid position: columns 5-20, rows 18-23) */
         .textbox-2 {
-            grid-column: 5 / 20;
-            grid-row: 18 / 23;
-            padding: 15px;
+            grid-column: 4 / 23;
+            grid-row: 19 / 25;
+            padding: 10px;
             font-size: 25px;
             display: flex;
             justify-content: center;
@@ -118,6 +122,70 @@
             color: #1e2a3a;
             font-weight: bold;
             text-shadow: 0 1px 2px rgba(255,255,255,0.6);
+
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* Answer buttons container – positioned directly below textbox-2 */
+        .answer-buttons-container {
+            grid-column: 5 / 20;
+            grid-row: 22 / 24;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 15px;
+            position: relative;
+            z-index: 30;
+        }
+
+        .textbox-2::before {
+            content: attr(placeholder);
+            color: rgba(30, 42, 58, 0.55);
+            font-weight: normal;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .textbox-2:not(:empty)::before {
+            display: none;
+        }
+
+        .answer-btn {
+            background: #1d4ed8;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 999px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .answer-btn:hover:not(:disabled) {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+        }
+
+        .answer-btn:active:not(:disabled) {
+            transform: translateY(1px);
+        }
+
+        .answer-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .answer-btn.true-btn {
+            background: #16a34a;
+        }
+
+        .answer-btn.false-btn {
+            background: #dc2626;
         }
 
         /* Overlay with backdrop-filter – blurs only the background content */
@@ -319,14 +387,14 @@
         @for ($i = 0; $i < 576; $i++) <div style="pointer-events: none;"></div> @endfor
         <div class="textbox-1" id="questionBox" contenteditable="false" placeholder="Câu hỏi sẽ xuất hiện ở đây..."></div>
         <div class="question-id-box" id="questionIdBox"></div>
-        <div class="textbox-2" id="answerBox" contenteditable="false" placeholder="Đáp án sẽ hiện ở đây..."></div>
+        <div class="textbox-2" id="answerBox" contenteditable="false"></div>
+        <div class="answer-buttons-container" id="answerButtonsContainer"></div>
     </div>
 
     <!-- Button to toggle slot machine -->
     <button class="toggle-slot-btn" id="toggleSlotBtn">Mở máy quay</button>
 
-    <!-- Nút câu hỏi tiếp theo -->
-    <button class="next-question-btn" id="nextQuestionBtn">Câu hỏi tiếp theo</button>
+    <button class="next-question-btn" id="nextQuestionBtn">Next</button>
     <button class="reset-question-btn" id="resetQuestionBtn">Reset câu hỏi</button>
 
     <!-- Dark overlay with blur effect (only blurs background content) -->
@@ -342,7 +410,7 @@
         <button class="spin-slot-btn" id="spinBtn">QUAY</button>
     </div>
 
-    <div class="remain-info" id="remainInfo">Câu còn lại: {{ $totalQuestions }}</div>
+    <div class="remain-info" id="remainInfo">Còn lại: {{ $totalQuestions }}</div>
 </div>
 
 <script>
